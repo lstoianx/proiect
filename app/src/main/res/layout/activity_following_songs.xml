@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FollowingSongsActivity">
+
+    <ImageView
+        android:id="@+id/playlistImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/add_photo"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/playlistTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playlist Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@id/playlistImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/createdBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/playlistTitle"
+        android:layout_marginTop="15dp"
+        android:text="aaaaaaaa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:layout_below="@id/createdBy"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/playlistSongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="This playlist is empty"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/playlistRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarShowSongs"
+            android:indeterminate="true"/>
+
+    </FrameLayout>
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:background="@color/colorAccent"
+        app:next_icon_color="@color/colorWhite"
+        app:previous_icon_color="@color/colorWhite"
+        app:pause_icon_color="@color/colorWhite"
+        app:play_icon_color="@color/colorWhite"
+        app:progress_color="@color/colorWhite"
+        app:random_icon_color="@color/colorWhite"
+        app:repeat_icon_color="@color/colorWhite"
+        app:repeat_one_icon_color="@color/colorWhite"
+        app:seek_bar_color="@color/colorWhite"
+        app:text_audio_current_duration_color="@color/colorWhite"
+        app:text_audio_duration_color="@color/colorWhite"
+        app:text_audio_title_color="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

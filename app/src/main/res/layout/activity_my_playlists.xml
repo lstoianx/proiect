@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPlaylistsActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myPlaylistRv"
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/noPlaylists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You did not create any playlist yet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/searchPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:text="Search Playlist"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/makePlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:text="Create Playlist"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/followedPlaylists"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:text="Followed Playlists"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

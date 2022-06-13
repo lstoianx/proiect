@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Player</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+
+    <string name="login">Login</string>
+    <string name="last_name">Last name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="gen_muzical">
+        <item>Please select the genre</item>
+        <item>Rock</item>
+        <item>Dance</item>
+        <item>Electro</item>
+        <item>Rap</item>
+        <item>Indie</item>
+        <item>Hip-Hop</item>
+        <item>Jazz</item>
+        <item>Reggae</item>
+        <item>Ambiental</item>
+    </string-array>
+
+    <string-array name="filter_genre">
+        <item>All genres</item>
+        <item>Rock</item>
+        <item>Dance</item>
+        <item>Electro</item>
+        <item>Rap</item>
+        <item>Indie</item>
+        <item>Hip-Hop</item>
+        <item>Jazz</item>
+        <item>Reggae</item>
+        <item>Ambiental</item>
+    </string-array>
+
+</resources>

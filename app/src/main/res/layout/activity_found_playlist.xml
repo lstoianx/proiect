@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoundPlaylist">
+
+    <LinearLayout
+        android:id="@+id/aboutPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/playlistPhoto"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/add_photo"
+            android:layout_marginStart="30dp"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/playlistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Lalala"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/playlistCreator"
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Created by: Adrian"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/numberSongs"
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Songs: "
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/followBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/follow_btn"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@id/aboutPlaylist"
+        android:layout_marginTop="30dp"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="Follow"/>
+
+    <TextView
+        android:id="@+id/playlistEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The playlist is empty"
+        android:layout_below="@id/followBtn"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/followedRv"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_below="@id/followBtn"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBarFollowed"
+        android:indeterminate="true"/>
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:background="@color/colorAccent"
+        app:next_icon_color="@color/colorWhite"
+        app:previous_icon_color="@color/colorWhite"
+        app:pause_icon_color="@color/colorWhite"
+        app:play_icon_color="@color/colorWhite"
+        app:progress_color="@color/colorWhite"
+        app:random_icon_color="@color/colorWhite"
+        app:repeat_icon_color="@color/colorWhite"
+        app:repeat_one_icon_color="@color/colorWhite"
+        app:seek_bar_color="@color/colorWhite"
+        app:text_audio_current_duration_color="@color/colorWhite"
+        app:text_audio_duration_color="@color/colorWhite"
+        app:text_audio_title_color="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

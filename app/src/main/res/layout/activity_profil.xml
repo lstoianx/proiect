@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfilActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit profile"
+            android:textSize="40sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+
+        <TextView
+            android:id="@+id/last_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:textSize="20sp"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+
+        <EditText
+            android:id="@+id/last_nameEt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/last_nameTv"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/first_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First name"
+            android:textSize="20sp"
+            android:layout_below="@+id/last_nameEt"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+
+        <EditText
+            android:id="@+id/first_nameEt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/first_nameTv"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/change_nameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_below="@id/first_nameEt"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"/>
+
+
+        <TextView
+            android:id="@+id/change_passwordTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:textSize="20sp"
+            android:layout_below="@+id/change_nameBtn"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/passTIL"
+            android:layout_below="@+id/change_passwordTv"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/change_passwordEt"
+                android:inputType="textPassword"
+                android:hint="Insert the new password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/confPassTIL"
+            android:layout_below="@+id/passTIL"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/change_passwordEt2"
+                android:inputType="textPassword"
+                android:hint="Confirm the new password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/change_passwordBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_below="@id/confPassTIL"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/deactivateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Delete my account"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_artist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ArtistActivity"
+    tools:openDrawer="start">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/searchOwnSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Search..."
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Name"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/searchOwnSong"
+                android:textSize="30sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/ownNameTv"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_below="@id/ownNameTv"
+                android:layout_marginTop="30dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ownSongsTxt"
+                    android:text="You did not upload any songs yet"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_marginTop="40dp"
+                    android:textSize="18sp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ownSongsRv">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/progressBarOwnSongs"
+                    android:indeterminate="true"/>
+
+            </FrameLayout>
+
+            <com.example.jean.jcplayer.view.JcPlayerView
+                android:id="@+id/jcplayer"
+                android:background="@color/colorAccent"
+                app:next_icon_color="@color/colorWhite"
+                app:previous_icon_color="@color/colorWhite"
+                app:pause_icon_color="@color/colorWhite"
+                app:play_icon_color="@color/colorWhite"
+                app:progress_color="@color/colorWhite"
+                app:random_icon_color="@color/colorWhite"
+                app:repeat_icon_color="@color/colorWhite"
+                app:repeat_one_icon_color="@color/colorWhite"
+                app:seek_bar_color="@color/colorWhite"
+                app:text_audio_current_duration_color="@color/colorWhite"
+                app:text_audio_duration_color="@color/colorWhite"
+                app:text_audio_title_color="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/artist_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

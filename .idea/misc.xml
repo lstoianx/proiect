@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/accept_btn.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/add_photo.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/customborder.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/deny_btn.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/follow_btn.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/ic_face_grey.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/next_btn.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/pause_btn.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/play_btn.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/previous_btn.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/drawable/search_bar.xml" value="0.2995" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/activity_inregistrare.xml" value="0.33" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/activity_logare.xml" value="0.3296875" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/activity_main_page.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/activity_playlist.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/activity_profil.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/nav_header.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/playlist_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/song_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/layout/user_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/menu/admin_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/menu/artist_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pato_/OneDrive/Desktop/Player/Player/app/src/main/res/menu/drawer_menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
